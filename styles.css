@@ -1,0 +1,367 @@
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); */
+
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    /* background: linear-gradient(to right, #00093c, #2d0b00); */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profile-card {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    background: white;
+    padding: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 42px #5b75e0;
+    transition: .6s;
+}
+
+.profile-card:hover {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    transition: .6s;
+    z-index: 10;
+}
+
+.profile-card:hover img {
+    transform: translateY(-60px);
+}
+
+img {
+    width: 200px;
+    
+    border-radius: 50%;
+    /* box-shadow: 0 0 11px #9c1e5b; */
+    transition: .6s;
+}
+
+.profile-card:hover img {
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+}
+
+.caption h3 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.caption p {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: -25px;
+    font-size: 15px;
+    color: #0c52a1;
+    
+}
+#CommInputcom{
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px;
+    /* text-align: center; */
+    border: 2px solid #0c52a1;
+    outline: none;
+}
+/* #commentDiv{
+    overflow-y: 20px;
+    background-color: aqua;
+    margin-top: 20px;
+    
+} */
+
+
+
+@media only screen and (max-width: 700px) {
+    .profile-card {
+        margin-top: 45px;
+    }
+
+}
+
+
+
+
+
+
+
+
+.navbarList{
+    display: flex;
+    /* justify-content: flex-end; */
+    list-style: none;
+}
+.navlist{
+    display: flex;
+    margin-left: 75%;
+    /* justify-content: flex-end; */
+
+}
+.iconNav{
+    width: 50px;
+    margin-left:30px;
+    margin-top: 15px;
+}
+.logoNav{
+    width: 150px;
+}
+.feeds{
+    width: 60%;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.CreatePostBtn{
+    background-color: #5b75e0;
+    margin-left: 70%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    width: 30%;
+}
+#create{
+    display: none;
+}
+.profile{
+    /* background-color: aqua; */
+    width: 300px;
+    /* border-right:3px solid #9c1e5b ; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+.activtes{
+    /* margin-right: 20px; */
+    width: 100%;
+    /* background-color: #0c52a1; */
+    /* background-color: blue; */
+}
+.contair{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
+    /* background-color: #0c52a1; */
+    display:none;
+    margin-top: 20px;
+}
+.card{
+    width: 90% !important;
+    
+    margin: 20px auto;
+}
+.nav-link:hover{
+    font-weight: bold !important;
+    color: #5b75e0 !important;
+ }
+ /* .lokij{
+    background-color: aqua;
+ } */
+.blogList{
+    border: 2px solid #5b75e0;
+    list-style: none;
+    width: 70%;
+    padding: 5px;
+    text-align: start;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.blogListCom{
+    /* background-color: black; */
+    border: 2px solid #5b75e0;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    text-align: start;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.icons{
+    color: #5b75e0 ;
+    /* display: flex; */
+    /* justify-content: end; */
+    /* margin-left: 85%; */
+    text-align: end;
+    /* align-items: flex-end; */
+    width: 80%;
+    /* background-color: #0c52a1; */
+    cursor: pointer;
+}
+.icon {
+    color: #5b75e0;
+    margin-left: 10px;
+    cursor: pointer;
+    /* font-size: 12px; */
+}
+#signout{
+    color: white;
+    background-color: #5b75e0;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+}
+#profimgBlog{
+    width: 70px;
+    height: 70px;
+    /* display: inline; */
+}
+
+#profimgBlogCom{
+    width: 50px;
+    height: 50px;
+    /* display: inline; */
+}
+.comName{
+    font-size: 18px;
+    font-weight: bold;
+}
+.blogDiv{
+    display: flex;
+}
+/* .BlogProfP{
+    display: block;
+} */
+.BlogProfP{
+    /* background-color: #0c52a1 ; */
+    /* width: 500px; */
+    color: gray;
+    font-size: 15px;
+}
+#loader2{
+    display: none;
+}
+.message{
+    color: #5b75e0;
+    margin-left: 30%;
+    /* font-size: 12px; */
+    cursor: pointer;
+    text-align: end;
+}
+.comments{
+    list-style: none;
+    width: 90%;
+    font-size: 12px;
+    border: 1px solid #0c52a1;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#profimgBlogcom{
+    width: 50px;
+    height: 50px;
+    /* display: inline; */
+}
+.BlogProfPcom{
+    /* background-color: #0c52a1 ; */
+    /* width: 500px; */
+    color: gray;
+    font-size: 12px;
+}
+.loki{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .navlist{
+        display: flex;
+        margin-left: 10%;
+        /* justify-content: flex-end; */
+    
+    }
+    .iconNav{
+        width: 40px;
+        margin-left:10px;
+        cursor: pointer;
+    }
+    .logoNav{
+        width: 120px;
+    }
+    .CreatePostBtn{
+        background-color: #5b75e0;
+        margin-left: 60%;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 10px;
+        border: none;
+        color: white;
+        font-weight: bolder;
+        width: 40%;
+    }
+    .icons{
+        /* display: flex; */
+        /* justify-content: end; */
+        /* margin-left: 85%; */
+        text-align: end;
+        /* align-items: flex-end; */
+        width: 80%;
+        /* background-color: #0c52a1; */
+        color: #5b75e0;
+    }
+    .message{
+        margin-left: 5%;
+        font-size: 12px;
+        
+    }
+    .icon {
+        color: #5b75e0;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .blogList{
+        border: 2px solid #5b75e0;
+        list-style: none;
+        width: 90%;
+        padding: 5px;
+        text-align: start;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+}
+
+
+
